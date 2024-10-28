@@ -1,0 +1,83 @@
+.main-heading{
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: 600;
+}
+.sub-heading{
+    line-height: 30px;
+    font-weight: 400;
+    margin: 1em 0.8em;
+}
+
+.home-banner {
+    background-image: url('/Banners/HomeBanner.jpeg');
+    background-size: cover;
+    /* Sets the image height to 200px, scales the width */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    margin-top: 4.2em;
+}
+
+.services {}
+.service-card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .MuiPaper-root{
+        width: 23%;
+        margin-bottom: 10px;
+    }
+}
+
+.bedroom-banner{
+    img{
+        width: 60%;
+        height: 25em;
+        margin-top: 2em;
+    }
+}
+.bedroom-btn{
+    position: absolute;
+    top: 50%;
+    margin-top: 1em;
+}
+
+.contactUs-banner{
+    padding-top: 3.5em;
+    border-radius: 1em;
+    align-items: center;
+    .text-section{
+        background-color: rgba(249, 167, 167, 1);
+        border-radius: 20px 0px 0px 20px;
+        width: 60%;
+    }
+    .contact-image{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .service-card-container{
+        .MuiPaper-root{
+            width: 47%;
+        }
+    }
+    .bedroom-banner{
+        img{
+            width: 100%;
+        }
+    }
+    .bedroom-btn{
+        position: static;
+        text-align: center;
+    }
+    .contactUs-banner{
+        .text-section{
+            background-color: rgba(249, 167, 167, 1);
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+  }

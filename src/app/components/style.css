@@ -1,0 +1,7 @@
+.home-button{
+    button{
+        padding: 0.5em;
+        background-color: rgba(29, 174, 255, 0.8);
+        border: 0.5px solid rgba(29, 174, 255, 1);
+    }
+}
