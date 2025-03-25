@@ -5,6 +5,7 @@
 .footer-content{
     justify-content: space-evenly;
     text-align: center;
+    align-items: center;
 }
 .vertical-line{
     width: 100%;

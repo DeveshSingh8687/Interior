@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-import Header from "./Header";
 import BedroomHome from "./Home/BedroomHome";
 import ContactUsBanner from "./Home/ContactUsBanner";
 import DrawingHome from "./Home/DrawingHome";
@@ -12,7 +10,6 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Header />
       <div><HomeBanner /></div>
       <div className="m-1 m-md-5">
         <div><Services /> </div>
@@ -22,7 +19,6 @@ export default function Home() {
         <div><TVRoomHome /></div>
         <div><ContactUsBanner /></div>
       </div>
-      <Footer />
     </div>
   );
 }

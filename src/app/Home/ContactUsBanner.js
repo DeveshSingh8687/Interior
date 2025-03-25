@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const ContactUsBanner = () => {
@@ -11,6 +12,7 @@ const ContactUsBanner = () => {
                 <div>📞 Phone: [Your Phone Number]</div>
                 <div>📧 Email: [Your Email Address]</div>
                 <div>📍 Office Location: [Your Address] (if applicable)</div>
+                <h3 className='contact-more'><Link href={'/contact-us'}>...Know More about us</Link></h3>
             </div>
             <div className='contact-image d-none d-md-block'><Image src={'/Banners/ContactBanner.jpg'} width={250} height={250} alt='contact us'/></div>
         </div>

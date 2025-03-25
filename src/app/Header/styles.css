@@ -14,3 +14,9 @@
     width: 50%;
     justify-content: space-between;
 }
+.contact-header{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
