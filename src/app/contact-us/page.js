@@ -9,8 +9,14 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { CONTACT_DETAILS } from "../components/constants";
+import PersonIcon from '@mui/icons-material/Person';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import Link from 'next/link';
 
 const ContactUs = () => {
+    const message = "Hi, I want to know about your interior design";
     return (
         <div className='contact-us-container'>
             <div className='contact-us-img  position-relative'>
@@ -24,20 +30,40 @@ const ContactUs = () => {
             <div className='contact-us-card-container'>
                 <div className='contact-us-card'>
                     <FmdGoodOutlinedIcon />
-                    <div className='mt-2'>Noida</div>
-                    <div>Office: Our Office is at noida sector 70</div>
+                    <div className='mt-2'>NCR</div>
+                    <div>{CONTACT_DETAILS.address}</div>
                 </div>
                 <div className='contact-us-card'>
                     <PhoneOutlinedIcon />
-                    <div className='mt-2' style={{cursor:'pointer'}}><EmailOutlinedIcon />Dummy@email.com</div>
-                    <div className='mt-1' style={{cursor:'pointer'}}> <PhoneOutlinedIcon /> 913673</div>
+                    <Link href={`mailto:${CONTACT_DETAILS.email}`} className='contactlink'><div className='mt-2'><EmailOutlinedIcon />{CONTACT_DETAILS.email}</div></Link>
+                    <Link href={`tel:+91${CONTACT_DETAILS.phone}`} className='contactlink'><div className='mt-1'> <PhoneOutlinedIcon /> {CONTACT_DETAILS.phone}</div></Link>
+                    <a
+                        href={`https://wa.me/${CONTACT_DETAILS.whatsapp}?text=${encodeURIComponent(
+                            message
+                        )}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='contactlink'
+                    >
+                    <div className='mt-1'><WhatsAppIcon /> {CONTACT_DETAILS.whatsapp}</div>
+                    </a>
+                    <Link href={`tel:+91${CONTACT_DETAILS.secondPhone}`} className='contactlink'><div className='mt-1'> <PhoneOutlinedIcon /> {CONTACT_DETAILS.secondPhone}</div></Link>
                 </div>
-                <div className='contact-us-card'>
+                {/* This is social media card uncomment in future */}
+                {/* <div className='contact-us-card'>
                     <AccountBalanceOutlinedIcon />
-                    <div className='mt-2' style={{cursor:'pointer'}}><FacebookIcon />sc@email.com</div>
-                    <div style={{cursor:'pointer'}}><XIcon />sc@email.com</div>
-                    <div style={{cursor:'pointer'}}><InstagramIcon />sc@email.com</div>
-                    <div style={{cursor:'pointer'}}><YouTubeIcon />sc@email.com</div>
+                    <div className='mt-2' style={{ cursor: 'pointer' }}><FacebookIcon />sc@email.com</div>
+                    <div style={{ cursor: 'pointer' }}><XIcon />sc@email.com</div>
+                    <div style={{ cursor: 'pointer' }}><InstagramIcon />sc@email.com</div>
+                    <div style={{ cursor: 'pointer' }}><YouTubeIcon />sc@email.com</div>
+                </div> */}
+
+                <div className='contact-us-card'>
+                    <PersonIcon />
+                    <Link href='developer' className='contactlink'>
+                    <div className='mt-2'>Know more about the people Behind</div>
+                    <div className='mt-2'><ArrowRightAltIcon /></div>
+                    </Link>
                 </div>
 
             </div>

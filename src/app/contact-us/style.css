@@ -37,8 +37,14 @@
         text-align: center;
         background: teal;    
         width: 350px;
+        place-items: center;
+        place-content: center;
         .css-1umw9bq-MuiSvgIcon-root{
             color: white;
         }
+    }
+    .contactlink{
+        text-decoration: none;
+        color: white;
     }
 }

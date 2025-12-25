@@ -57,10 +57,15 @@
         width: 40%;
     }
     .contact-more{
+        margin-top: 10px;
         a{
             text-decoration: none;
-            color: gray;
+            /* color: gray; */
         }
+    }
+    .contactLink{
+        text-decoration: none;
+        color: black;
     }
 }
 

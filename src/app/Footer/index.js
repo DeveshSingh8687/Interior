@@ -7,13 +7,15 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
+import { CONTACT_DETAILS } from "../components/constants";
+import Link from 'next/link';
 
 const Footer = () => {
   return (
     <div className='footer-container'>
         <div className='footer-content d-block d-md-flex pb-3'>
           <div className='text-center'>
-            <Image src={'/Logo.JPG'} width={50} height={50} alt='logo' />
+            <Image src={'/Logo.jpeg'} width={50} height={50} alt='logo' />
             <div className='mt-2'><FacebookIcon />&nbsp;<XIcon />&nbsp;<YouTubeIcon/>&nbsp;<InstagramIcon /></div>
           </div>
           <div>Privacy and Policy</div>
@@ -21,8 +23,8 @@ const Footer = () => {
         <div className='vertical-line'></div>
         <div className='copyright-container d-block d-md-flex'>
           <div>Copyright © Fine Finish Interior Private Limited. All rights reserved.</div>
-          <div><MailOutlineIcon /> Demo Emial</div>
-          <div><LocalPhoneOutlinedIcon /> Phone number</div>
+          <Link href={`mailto:${CONTACT_DETAILS.email}`} className='contactLink'><div><MailOutlineIcon /> {CONTACT_DETAILS.email}</div></Link>
+          <Link href={`tel:+91${CONTACT_DETAILS.phone}`} className='contactLink'><div><LocalPhoneOutlinedIcon /> {CONTACT_DETAILS.phone}</div></Link>
         </div>
         <div className='vertical-line'></div>
         <div className='footer-description'>

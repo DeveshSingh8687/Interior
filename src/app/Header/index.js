@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <div className='header-container d-flex'>
-        <Link href={'/'}><Image src={'/Logo.JPG'} alt='logo' width={50} height={50} /></Link>
+        <Link href={'/'}><Image src={'/Logo.jpeg'} alt='logo' width={50} height={50} /></Link>
         <div className='navigation-link d-none d-md-flex'>
           <div>Bedroom</div> &nbsp;
           <div>Kitchen</div> &nbsp;
