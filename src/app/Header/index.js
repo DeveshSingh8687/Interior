@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className='header-container d-flex'>
       <Link href={'/'}><Image src={'/Logo.png'} alt='logo' width={120} height={50} /></Link>
-      <div style={{display: "flex", gap: "43px"}}>
+      <div style={{ display: "flex", gap: "43px" }}>
         <div className='navigation-link d-none d-md-flex'>
           <div>Bedroom</div>
           <div>Kitchen</div>
@@ -18,10 +18,12 @@ const Header = () => {
           <div>About Us</div>
           <div>FAQs</div>
         </div>
-        <button className='contact-btn'>
-          <AddIcCallIcon style={{ color: '#981f1f', fontSize: "18px" }} />
-          Contact Us
-        </button>
+        <Link href={'/contact-us'} style={{ textDecoration: 'none' }}>
+          <button className='contact-btn'>
+            <AddIcCallIcon style={{ color: '#981f1f', fontSize: "18px" }} />
+            Contact Us
+          </button>
+        </Link>
       </div>
 
 

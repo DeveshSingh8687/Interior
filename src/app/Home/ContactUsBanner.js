@@ -22,8 +22,10 @@ const ContactUsBanner = () => {
                 <Link href={`mailto:${CONTACT_DETAILS.email}`} className='contactLink'><div><span>📧</span> Email: {CONTACT_DETAILS.email}</div></Link>
                 <Link href="/" className='contactLink'><span>📍</span> Office Location: {CONTACT_DETAILS.address}</Link>
                 <div className='contact-more'>
-                    <button className='contact-btn' style={{height: "40px"}}>Know More</button>
-                    </div>
+                    <Link href={'/contact-us'} style={{ textDecoration: 'none' }}>
+                        <button className='contact-btn' style={{ height: "40px" }}>Know More</button>
+                    </Link>
+                </div>
             </div>
 
         </div>
