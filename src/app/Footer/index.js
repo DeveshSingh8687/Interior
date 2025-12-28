@@ -15,7 +15,7 @@ const Footer = () => {
     <div className='footer-container'>
         <div className='footer-content d-block d-md-flex pb-3'>
           <div className='text-center'>
-            <Image src={'/Logo.jpeg'} width={50} height={50} alt='logo' />
+            <Image src={'/Logo.png'} width={120} height={50} alt='logo' />
             <div className='mt-2'><FacebookIcon />&nbsp;<XIcon />&nbsp;<YouTubeIcon/>&nbsp;<InstagramIcon /></div>
           </div>
           <div>Privacy and Policy</div>

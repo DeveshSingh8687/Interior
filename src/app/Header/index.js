@@ -8,7 +8,7 @@ import { Button } from '@mui/material';
 const Header = () => {
   return (
     <div className='header-container d-flex'>
-      <Link href={'/'}><Image src={'/Logo.jpeg'} alt='logo' width={50} height={50} /></Link>
+      <Link href={'/'}><Image src={'/Logo.png'} alt='logo' width={120} height={50} /></Link>
       <div style={{display: "flex", gap: "43px"}}>
         <div className='navigation-link d-none d-md-flex'>
           <div>Bedroom</div>
