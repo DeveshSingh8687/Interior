@@ -3,17 +3,28 @@ import React from 'react'
 import './styles.css'
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import Link from 'next/link';
+import { Button } from '@mui/material';
 
 const Header = () => {
   return (
     <div className='header-container d-flex'>
-        <Link href={'/'}><Image src={'/Logo.jpeg'} alt='logo' width={50} height={50} /></Link>
+      <Link href={'/'}><Image src={'/Logo.jpeg'} alt='logo' width={50} height={50} /></Link>
+      <div style={{display: "flex", gap: "43px"}}>
         <div className='navigation-link d-none d-md-flex'>
-          <div>Bedroom</div> &nbsp;
-          <div>Kitchen</div> &nbsp;
-          <div>Drawing</div> &nbsp;
+          <div>Bedroom</div>
+          <div>Kitchen</div>
+          <div>Drawing</div>
+          <div>Blog</div>
+          <div>About Us</div>
+          <div>FAQs</div>
         </div>
-        <div className='contact-header'><Link href={'/contact-us'}><AddIcCallIcon  style={{color:'#FF6699'}}/> Contact Us</Link></div>
+        <button className='contact-btn'>
+          <AddIcCallIcon style={{ color: '#981f1f', fontSize: "18px" }} />
+          Contact Us
+        </button>
+      </div>
+
+
     </div>
   )
 }

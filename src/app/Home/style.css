@@ -1,94 +1,146 @@
-.main-heading{
+.main-heading {
     margin-top: 1em;
     font-size: 2em;
     font-weight: 600;
 }
-.sub-heading{
-    line-height: 30px;
-    font-weight: 400;
-    margin: 1em 0.8em;
+
+.sub-heading {
+
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
 .home-banner {
-    background-image: url('/Banners/HomeBanner.jpeg');
+    background-image: url('/Banners/end-to-end-home-interior-designs.jpg');
     background-size: cover;
-    /* Sets the image height to 200px, scales the width */
     background-repeat: no-repeat;
     background-position: center;
-    height: 250px;
+    height: 79vh;
     width: 100%;
     margin-top: 4.2em;
 }
 
-.services {}
-.service-card-container{
+.services {
+    text-align: center;
+}
+
+.service-card-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    .MuiPaper-root{
+
+    .MuiPaper-root {
         width: 23%;
         margin-bottom: 10px;
     }
 }
 
-.bedroom-banner{
-    img{
+.bedroom-banner {
+    img {
         width: 60%;
         height: 25em;
         margin-top: 2em;
     }
 }
-.bedroom-btn{
+
+.bedroom-btn {
     position: absolute;
     top: 50%;
     margin-top: 1em;
 }
 
-.contactUs-banner{
+.contactUs-banner {
     padding-top: 3.5em;
     border-radius: 1em;
     align-items: center;
-    .text-section{
-        background-color: rgba(249, 167, 167, 1);
-        border-radius: 20px 0px 0px 20px;
-        width: 60%;
+
+    .text-section {
+        width: 50%;
+        text-align: left;
+        line-height: 3;
     }
-    .contact-image{
-        width: 40%;
+
+    .text-section h1 {
+        margin-bottom: 2rem;
+        font-weight: 700;
     }
-    .contact-more{
-        margin-top: 10px;
-        a{
+
+    .text-section p {
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .text-section h3 {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .text-section a {
+        line-height: 2.7;
+    }
+
+    .text-section a span {
+        border: 1px solid #af1440;
+        padding: 5px;
+        border-radius: 22px;
+        margin-right: 10px;
+    }
+
+    .contact-image {
+        width: 50%;
+    }
+
+    .contact-image img {
+        width: 75%;
+        height: 75%;
+        border-radius: 20px;
+    }
+
+    .contact-more {
+        margin-top: 20px;
+
+        a {
             text-decoration: none;
             /* color: gray; */
         }
     }
-    .contactLink{
+    .contact-more a {
+    color: #8d8d8d;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+    .contactLink {
         text-decoration: none;
         color: black;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .service-card-container{
-        .MuiPaper-root{
+    .service-card-container {
+        .MuiPaper-root {
             width: 47%;
         }
     }
-    .bedroom-banner{
-        img{
+
+    .bedroom-banner {
+        img {
             width: 100%;
         }
     }
-    .bedroom-btn{
+
+    .bedroom-btn {
         position: static;
         text-align: center;
     }
-    .contactUs-banner{
-        .text-section{
+
+    .contactUs-banner {
+        .text-section {
             background-color: rgba(249, 167, 167, 1);
             width: 100%;
             border-radius: 20px;
         }
     }
-  }
+}

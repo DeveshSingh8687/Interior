@@ -6,17 +6,24 @@
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    padding: 0.5em;
+    padding: 0.5em 1rem;
     z-index: 10;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.navigation-link{
-    width: 50%;
-    justify-content: space-between;
+
+.navigation-link {
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 300;
+    color: #0d8ca6
 }
-.contact-header{
-    a{
+
+.contact-header {
+    a {
         text-decoration: none;
         color: black;
     }
 }
+

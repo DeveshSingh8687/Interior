@@ -5,19 +5,19 @@ const Services = () => {
     return (
         <div className="services">
             <div className="main-heading">We Deals in </div>
-            <div className="sub-heading">We specialize in crafting interiors that reflect your unique style, blending elegance with comfort and practicality. Whether you're looking to revitalize a single room or redesign an entire home, our team of experienced designers is dedicated to creating spaces that inspire, rejuvenate, and delight.</div>
+            <div className="sub-heading">We specialize in crafting interiors that reflect your unique style, blending elegance with comfort and practicality.</div>
             <div className="service-card-container">
                 {
                     serviceData.map((val, ind) => (
-                        <Card sx={{ maxWidth: 345 }} key={ind}>
+                        <Card sx={{ maxWidth: 345, boxShadow: "none" }} key={ind}>
                             <CardMedia
-                                sx={{ height: 140 }}
+                                sx={{ height: "50vh", borderRadius: "61px" }}
                                 image={val.logo}
                                 title={val.title}
                             />
-                            <CardContent style={{textAlign:'center'}}>
-                                <Typography gutterBottom variant="h5" component="div">{val.title}</Typography>
-                                <Typography variant="p">Explore {val.title}</Typography>
+                            <CardContent style={{textAlign:'center', lineHeight: "0.5"}}>
+                                <Typography  variant="h5" component="div" style={{fontWeight: "600"}}>{val.title}</Typography>
+                                <Typography variant="p" style={{color: "#737373", fontSize: "12px"}}>Explore {val.title}</Typography>
                             </CardContent>
                         </Card>
                     ))
