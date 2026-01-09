@@ -1,0 +1,35 @@
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 40px 0;
+
+    .knownFaces {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 600;
+        white-space: nowrap;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .line {
+        flex: 1;
+        height: 1px;
+        background-color: #ccc;
+        /* change color if needed */
+        max-width: 30%;
+    }
+}
+
+.ceo-container {
+    img{
+        border-radius: 20px;
+    }
+    .ceoName{
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}

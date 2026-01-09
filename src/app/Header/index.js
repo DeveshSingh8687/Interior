@@ -3,19 +3,29 @@ import React from 'react'
 import './styles.css'
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import Link from 'next/link';
-import { Button } from '@mui/material';
+import Sidebar from './Drawer';
 
 const Header = () => {
   return (
     <div className='header-container d-flex'>
-      <Link href={'/'}><Image src={'/Logo.png'} alt='logo' width={120} height={50} /></Link>
+      <div className='d-flex align-items-center gap-1'>
+        <Sidebar />
+        <Link href={'/'} className='logo-container'>
+          <Image src={'/Logos.png'} alt='logo' width={60} height={50} />
+          <div className='logo-text-container'>
+            <div className='logo-boldTxt'>FINE FINISH </div>
+            <div className='logo-lightTxt'>INTERIORS & DESIGN</div>
+          </div>
+        </Link>
+      </div>
       <div style={{ display: "flex", gap: "43px" }}>
         <div className='navigation-link d-none d-md-flex'>
-          <div>Bedroom</div>
+          {/* <div>Bedroom</div>
           <div>Kitchen</div>
           <div>Drawing</div>
-          <div>Blog</div>
-          <div>About Us</div>
+          <div>Blog</div> */}
+          <Link href='aboutus' className='link'>About Us</Link>
+          <Link href='team' className='link'>Our Team</Link>
           <div>FAQs</div>
         </div>
         <Link href={'/contact-us'} style={{ textDecoration: 'none' }}>

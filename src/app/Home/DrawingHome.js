@@ -7,7 +7,7 @@ const DrawingHome = () => {
     <div className='bedroom-home position-relative'>
         <div className='main-heading'>Drawing Room</div>
         <div className='bedroom-banner'>
-          <Image src={'/Banners/DrwaingRoomBanner.jpg'} width={100} height={100} alt='kitchen' />
+          <img src={'/Banners/DrwaingRoomBanner.jpg'} width={100} height={100} alt='kitchen' />
         </div>
         <div className='bedroom-btn' style={{left:'50%'}}><Button name={"Drwaing"} /></div>
     </div>

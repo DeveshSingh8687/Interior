@@ -124,6 +124,11 @@ a {
     transition: all 1s;
 }
 
+@media (max-width: 767px) {
+  .contact-btn {
+    padding: 10px 10px;
+  }
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

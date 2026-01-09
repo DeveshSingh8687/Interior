@@ -14,6 +14,7 @@ import { CONTACT_DETAILS } from "../components/constants";
 import PersonIcon from '@mui/icons-material/Person';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Link from 'next/link';
+import OurTeam from '../ourTeam';
 
 const ContactUs = () => {
     const message = "Hi, I want to know about your interior design";
@@ -38,7 +39,7 @@ const ContactUs = () => {
                     <Link href={`mailto:${CONTACT_DETAILS.email}`} className='contactlink'><div className='mt-2'><EmailOutlinedIcon />{CONTACT_DETAILS.email}</div></Link>
                     <Link href={`tel:+91${CONTACT_DETAILS.phone}`} className='contactlink'><div className='mt-1'> <PhoneOutlinedIcon /> {CONTACT_DETAILS.phone}</div></Link>
                     <a
-                        href={`https://wa.me/${CONTACT_DETAILS.whatsapp}?text=${encodeURIComponent(
+                        href={`https://wa.me/+91${CONTACT_DETAILS.whatsapp}?text=${encodeURIComponent(
                             message
                         )}`}
                         target="_blank"
@@ -60,6 +61,14 @@ const ContactUs = () => {
 
                 <div className='contact-us-card'>
                     <PersonIcon />
+                    <Link href='team' className='contactlink'>
+                    <div className='mt-2'>Explore our Know Faces</div>
+                    <div className='mt-2'><ArrowRightAltIcon /></div>
+                    </Link>
+                </div>
+
+                <div className='contact-us-card'>
+                    <PersonIcon />
                     <Link href='developer' className='contactlink'>
                     <div className='mt-2'>Know more about the people Behind</div>
                     <div className='mt-2'><ArrowRightAltIcon /></div>
@@ -67,6 +76,7 @@ const ContactUs = () => {
                 </div>
 
             </div>
+            <OurTeam />
         </div>
     )
 }

@@ -7,7 +7,7 @@ const KitchenHome = () => {
     <div className='bedroom-home position-relative'>
         <div className='main-heading'>Kitchen</div>
         <div className='bedroom-banner' style={{textAlign:'right'}}>
-          <Image src={'/Banners/KitchenBanner.jpg'} width={100} height={100} alt='kitchen' />
+          <img src={'/Banners/KitchenBanner.jpg'} width={100} height={100} alt='kitchen' />
         </div>
         <div className='bedroom-btn' style={{left:'20%'}}><Button name={"Kitchen"} /></div>
     </div>

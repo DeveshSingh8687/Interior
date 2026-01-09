@@ -1,0 +1,84 @@
+.aboutUs {
+    .Banner {
+        position: relative;
+        margin-bottom: 80px;
+
+        .bannerImg img {
+            height: 400px;
+            width: 100%;
+        }
+    }
+
+    .aboutContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 20px 50px;
+
+        .text-container {
+            max-width: 60%;
+            text-align: left;
+        }
+    }
+
+    .bannerTxt {
+        position: absolute;
+        right: 100px;
+        font-size: 80px;
+        font-weight: 100;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .redText {
+        color: #ca0303;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .time-img {
+        border-radius: 15px;
+    }
+}
+
+.logo-img {
+    background-color: teal;
+    border-radius: 25px;
+    height: 250px;
+    width: 330px;
+    place-items: center;
+    place-content: center;
+}
+
+.aboutHeading {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+.text-container a div {
+    margin: 12px 0px;
+}
+
+.text-container a span {
+    border: 1px solid #ca0303;
+    padding: 5px;
+    border-radius: 22px;
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .aboutUs {
+        .aboutContainer {
+            margin: 20px 0px;
+            .text-container {
+                max-width: 80%;
+            }
+        }
+        .bannerTxt {
+            font-size: 40px;
+            top: 50px;
+            right: 10px;
+        }
+    }
+}

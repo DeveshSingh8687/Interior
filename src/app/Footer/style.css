@@ -34,3 +34,28 @@
     text-decoration: none;
     color: black;
 }
+
+.logo-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 6;
+    text-decoration: none;
+    color: black;
+
+    .logo-text-container {
+        text-align: left;
+        margin-bottom: -5px;
+    }
+
+    .logo-boldTxt {
+        font-weight: bold;
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-bottom: -5px;
+    }
+
+    .logo-lightTxt {
+        font-size: 8px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
